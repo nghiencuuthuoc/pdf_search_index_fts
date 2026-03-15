@@ -1,0 +1,69 @@
+PharmApp PDF Search Index - End-User Guide
+For customers using the Windows EXE build
+Version: 2026 release
+
+WHAT THIS APPLICATION DOES
+--------------------------
+- PharmApp PDF Search Index helps you search large PDF collections by indexed content or by PDF filename.
+- If the selected folder already contains index_fts.db, searches use SQLite FTS for high speed.
+- If the folder contains index.json but no index_fts.db, the application can create the FTS index automatically on first use or when the dataset is prepared.
+- The application also includes a PDF viewer, file explorer, logging panel, and optional translation workflow.
+
+QUICK START
+-----------
+1. Launch PharmApp PDF Search Index.
+2. In Dynamic path manager, paste a folder path or use Browse folder / Browse file / Add path.
+3. Open the new dataset tab created from that folder.
+4. Enter a keyword in Shared keyword or in the dataset keyword box.
+5. Click Search.
+6. Select a result to open the matching PDF page in the viewer.
+7. Use Refresh if the source folder has changed.
+
+MAIN SCREEN AREAS
+-----------------
+* Dynamic path manager: Adds a folder, PDF, or index.json. Each unique folder becomes a dataset tab.
+* Dataset tabs: Each tab is an independent searchable library.
+* Search results panel: Shows file name, page, match type, snippet, and path.
+* PDF viewer: Opens the selected PDF and supports page navigation, zoom, rotation, facing/book view, continuous mode, presentation, and fullscreen.
+* Explorer: Lists files and folders inside the selected dataset.
+* Log / Details: Shows status messages, indexing activity, and selected result details.
+
+TYPICAL WORKFLOW
+----------------
+1. Add the document folder that contains your PDFs and optional index.json.
+2. Wait for the application to check or build the FTS index if needed.
+3. Search for a topic, phrase, code, compound, section title, or filename fragment.
+4. Review the snippet in the result list.
+5. Open the result and read the target page in the built-in viewer.
+6. Use the explorer panel if you want to browse files manually.
+
+ABOUT AUTOMATIC INDEXING
+------------------------
+- First-time setup may take longer when the application needs to create index_fts.db.
+- After index_fts.db is available, repeated searches are much faster.
+- Keep index.json and the PDF folder together when possible.
+- If documents are updated, use Refresh so the application can re-check the dataset.
+
+TIPS AND TROUBLESHOOTING
+------------------------
+- No results: confirm that you opened the correct dataset tab and that the keyword is spelled correctly.
+- Slow first search: this is normal when the FTS index is being created.
+- PDF did not open: confirm that the PDF file still exists in the dataset folder.
+- Updated source files: click Refresh after adding, removing, or replacing PDFs.
+- Use concise keywords first, then refine with longer phrases if needed.
+
+USEFUL VIEWER CONTROLS
+----------------------
+- Single Page: Ctrl+6
+- Facing: Ctrl+7
+- Book View: Ctrl+8
+- Continuous mode: c
+- Zoom in / out: Ctrl+= / Ctrl+-
+- Rotate left / right: Ctrl+Shift+- / Ctrl+Shift++
+- Presentation: Ctrl+L
+- Fullscreen: Ctrl+Shift+L
+
+For regulated, technical, or large-scale libraries, PharmApp is most effective when the dataset folder is kept organized and the search index is allowed to complete before heavy use.
+
+© 2009-2026 • Pharma R&D Platforms • PharmApp • Discover • Design • Develop • Validate • Deliver | www.nghiencuuthuoc.com | Zalo:
++84888999311 | www.pharmapp.dev
