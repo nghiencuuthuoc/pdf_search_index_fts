@@ -1,0 +1,122 @@
+PHARMAPP PDF SEARCH INDEX V3 — HƯỚNG DẪN NGƯỜI DÙNG CUỐI
+========================================================
+
+Tài liệu tiếng Việt cho người dùng cuối
+
+Date: 2026-03-15
+
+
+
+1. GIỚI THIỆU
+-------------
+
+PharmApp PDF Search Index v3 giúp người dùng cuối tìm kiếm trong các bộ sưu tập PDF dược phẩm đã được lập chỉ mục, mở ngay tệp phù hợp và xem đúng trang trong trình xem PDF tích hợp.
+
+Ứng dụng được thiết kế cho thư viện tài liệu lớn. Ở các bản cấu hình phù hợp, phần mềm có thể dùng SQLite FTS để tìm nhanh hơn và có thể tự tạo file index_fts.db khi nạp hoặc tìm kiếm dataset lần đầu.
+
+
+2. CÁC VIỆC BẠN CÓ THỂ THỰC HIỆN
+--------------------------------
+
+Thêm thư mục, tệp PDF hoặc tệp index.json và để ứng dụng tự mở tab dataset liên quan.
+
+Tìm theo từ khóa trong nội dung đã lập chỉ mục, xem snippet trong danh sách kết quả và mở đúng trang PDF tương ứng.
+
+Đọc PDF theo chế độ Một trang, Hai trang, Dạng sách hoặc Liên tục.
+
+* Dùng chế độ Trình chiếu và Toàn màn hình cho họp rà soát hoặc trình bày.
+Dịch thuật ngữ hoặc cụm từ và tìm theo tên PDF đã dịch.
+
+Quản lý profile để lưu và khôi phục bố cục làm việc và trạng thái dataset.
+
+Duyệt tệp và thư mục, mở thư mục chứa tệp, và xem hoạt động trong vùng Log và Details.
+
+
+3. CÁC VÙNG CHÍNH TRÊN GIAO DIỆN
+--------------------------------
+
+Phần đầu: từ khóa dùng chung, ngôn ngữ giao diện và chế độ giao diện.
+
+Khu vực Profile: tạo mới, đổi tên, xóa, lưu và khôi phục profile.
+
+Dynamic path manager: nhập hoặc chọn thư mục, PDF hoặc index.json. Ứng dụng cũng hỗ trợ kéo thả.
+
+Tab dataset: ô tìm kiếm, bảng kết quả, khung chi tiết và các nút như Open selected PDF và Refresh.
+
+Trình xem PDF: điều hướng trang, chọn chế độ xem, zoom, xoay, hiển thị liên tục, trình chiếu và toàn màn hình.
+
+Explorer: duyệt tệp và thư mục trong dataset hiện tại.
+
+Log và Details: theo dõi hoạt động tìm kiếm, trạng thái và metadata.
+
+
+4. BẮT ĐẦU NHANH
+----------------
+
+* Bước 1: Mở pdf_search_index_v3.exe.
+* Bước 2: Trong Dynamic path manager, dán đường dẫn hoặc bấm Browse folder / Browse file.
+* Bước 3: Bấm Add path. Mỗi thư mục duy nhất sẽ tạo một tab dataset mới.
+* Bước 4: Nếu dataset có index.json, ứng dụng có thể tự chuẩn bị hoặc làm mới index_fts.db để tăng tốc tìm kiếm.
+* Bước 5: Nhập từ khóa trong ô tìm kiếm của dataset hoặc ô Shared keyword, rồi bấm Search.
+* Bước 6: Chọn một dòng kết quả để xem snippet. Kiểm tra số trang và đường dẫn.
+* Bước 7: Bấm Open selected PDF để mở đúng trang PDF khớp trong trình xem.
+
+
+5. QUY TRÌNH TÌM KIẾM
+---------------------
+
+* Dùng Shared keyword khi bạn muốn tái sử dụng cùng một từ khóa giữa nhiều tab hoặc trong công cụ dịch.
+Kết quả tìm kiếm thường hiển thị tên file, trang, loại, snippet và đường dẫn.
+
+Nếu có chỉ mục FTS nhanh, ứng dụng sẽ ưu tiên tìm trong chỉ mục đó. Nếu chưa có, ứng dụng có thể dùng nội dung từ index.json hoặc fallback sang tên file PDF tùy dataset.
+
+Nếu dataset mới chưa hiện kết quả ngay, hãy chờ quá trình chuẩn bị chỉ mục nền hoàn tất rồi tìm lại.
+
+
+6. SỬ DỤNG TRÌNH XEM PDF
+------------------------
+
+* Back / Next để chuyển trang.
+Nhập số trang và bấm Go để nhảy đến trang cụ thể.
+
+Mode cho phép chuyển giữa Một trang, Hai trang và Dạng sách.
+
+Show Pages Continuously hiển thị luồng đọc liên tục.
+
+* Rotate Left / Right xoay hình ảnh trang đã render.
+Các nút Zoom giúp thu nhỏ, phóng to hoặc về 100%.
+
+* Presentation mở cửa sổ trình chiếu sạch để rà soát trang.
+* Fullscreen phóng tối đa vùng xem.
+Các phím tắt hữu ích được hiển thị ngay trong viewer hint, gồm đổi chế độ xem, zoom, xoay, trình chiếu và toàn màn hình.
+
+
+7. DỊCH, PROFILE VÀ EXPLORER
+----------------------------
+
+* Dùng tab Translate để dịch từ khóa nguồn sang ngôn ngữ đích và tìm theo tên PDF đã dịch.
+* Dùng profile khi nhiều người dùng hoặc nhiều quy trình làm việc cần các tab, giao diện và layout khác nhau.
+* Dùng Explorer Files và Folders để xem nội dung dataset và mở thư mục chứa.
+
+
+8. MẸO VÀ XỬ LÝ SỰ CỐ
+---------------------
+
+Nên thử từ khóa ngắn và chính xác trước, sau đó mới mở rộng.
+
+Nếu dataset mới tìm còn chậm, hãy chờ quá trình tạo chỉ mục nền hoàn tất.
+
+Nếu PDF không mở được, kiểm tra lại xem tệp còn tồn tại trong thư mục dataset hay không.
+
+Bấm Refresh sau khi thay thế, di chuyển hoặc cập nhật tệp trong dataset.
+
+* Dùng Log và Details để xác nhận ứng dụng đang dùng SQLite FTS, index.json hay chế độ fallback theo tên file.
+
+
+9. THÔNG TIN LIÊN HỆ Ở FOOTER
+-----------------------------
+
+© 2009-2026 • Pharma R&D Platforms • PharmApp • Discover • Design • Develop • Validate • Deliver | www.nghiencuuthuoc.com | Zalo: +84888999311 | www.pharmapp.dev
+
+
+© 2009-2026 • Pharma R&D Platforms • PharmApp • Discover • Design • Develop • Validate • Deliver | www.nghiencuuthuoc.com | Zalo: +84888999311 | www.pharmapp.dev
