@@ -49,7 +49,7 @@ This tool is especially useful for:
 
 Download the latest packaged build here:
 
-- Release: <https://github.com/nghiencuuthuoc/pdf_search_index_fts/releases/tag/20260315_pdf_search_index_fts>
+- Release: <https://github.com/nghiencuuthuoc/pdf_search_index_fts/releases/tag/20260315
 
 ---
 
